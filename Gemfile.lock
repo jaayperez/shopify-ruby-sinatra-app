@@ -8,12 +8,12 @@ GEM
       multi_xml (>= 0.5.2)
     jwt (2.3.0)
     multi_xml (0.6.0)
-    mustermann (1.1.1)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     oj (3.13.13)
     openssl (3.0.0)
-    rack (2.2.3.1)
-    rack-protection (2.2.0)
+    rack (2.2.6.2)
+    rack-protection (3.0.5)
       rack
     ruby2_keywords (0.0.5)
     securerandom (0.2.0)
@@ -27,13 +27,13 @@ GEM
       securerandom
       sorbet-runtime
       zeitwerk (~> 2.5)
-    sinatra (2.2.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.0)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
       tilt (~> 2.0)
     sorbet-runtime (0.5.10037)
-    tilt (2.0.10)
+    tilt (2.0.11)
     zeitwerk (2.5.4)
 
 PLATFORMS
