@@ -1,23 +1,34 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    concurrent-ruby (1.1.10)
+    activesupport (7.0.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.2.2)
     dotenv (2.2.1)
-    hash_diff (1.0.0)
-    httparty (0.15.5)
+    hash_diff (1.1.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
-    jwt (2.3.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    jwt (2.7.0)
+    mini_mime (1.1.2)
+    minitest (5.18.0)
     multi_xml (0.6.0)
-    mustermann (1.1.1)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    oj (3.13.13)
-    openssl (3.0.0)
-    rack (2.2.3.1)
-    rack-protection (2.2.0)
+    oj (3.14.2)
+    openssl (3.1.0)
+    rack (2.2.6.4)
+    rack-protection (3.0.5)
       rack
     ruby2_keywords (0.0.5)
-    securerandom (0.2.0)
-    shopify_api (10.1.0)
+    securerandom (0.2.2)
+    shopify_api (12.4.0)
+      activesupport
       concurrent-ruby
       hash_diff
       httparty
@@ -26,24 +37,26 @@ GEM
       openssl
       securerandom
       sorbet-runtime
-      zeitwerk (~> 2.5)
-    sinatra (2.2.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.0)
+      zeitwerk (~> 2.5, < 2.6.5)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
       tilt (~> 2.0)
-    sorbet-runtime (0.5.10037)
-    tilt (2.0.10)
-    zeitwerk (2.5.4)
+    sorbet-runtime (0.5.10746)
+    tilt (2.1.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dotenv
-  httparty
+  httparty (>= 0.21.0)
   shopify_api
-  sinatra
+  sinatra (>= 2.2.3)
 
 BUNDLED WITH
    2.1.4
